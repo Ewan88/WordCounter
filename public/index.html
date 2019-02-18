@@ -10,7 +10,7 @@
     <h1>Word Counter</h1>
     <div id="app">
       <label for="text-input">Enter some text:</label>
-      <input type="text" v-model="text" id="text-input" />
+      <textarea type="text" v-model="text" id="text-input"></textarea>
       <button v-on:click="countWords">Count words</button>
       <h2 v-if="count">The phrase contains {{ count }} words</h2>
     </div>
