@@ -27,5 +27,10 @@ textarea {
 button {
   margin: 10px;
   width: 100px;
+  padding: 3px;
   align-self: center;
+}
+
+button:hover {
+  cursor: pointer;
 }

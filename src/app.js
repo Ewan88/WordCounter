@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import WordCounter from './models/word_counter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   new Vue({
@@ -8,8 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
       count: 0
     },
     methods: {
-      countWords(text){
-        this.count = this.text.split(" ").length;
+      countWords(){
+        if (this.text != ''){
+          this.count = WordCounter(this.text);
+        }
       }
     }
   });
