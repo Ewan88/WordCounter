@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (this.text != ''){
           this.count = WordCounter(this.text);
         }
+        else {
+          this.count = 0;
+        }
       }
     }
   });
